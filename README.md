@@ -15,3 +15,11 @@ py manage.py runserver
 Remove-Item -Recurse -Force simpleGame\.git
 
 git add -f mysite
+
+
+
+
+creating a database for each app:
+python manage.py migrate
+python manage.py makemigrations polls
+python manage.py sqlmigrate welcome 0001
